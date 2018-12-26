@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrvariumPIN", "DrvariumPIN\DrvariumPIN.csproj", "{F2BBC359-DBCA-466F-80B5-EDFE9E09B766}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2BBC359-DBCA-466F-80B5-EDFE9E09B766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BBC359-DBCA-466F-80B5-EDFE9E09B766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BBC359-DBCA-466F-80B5-EDFE9E09B766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BBC359-DBCA-466F-80B5-EDFE9E09B766}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94457D4E-4384-4644-B5D9-2B69B23492EA}
+	EndGlobalSection
+EndGlobal
