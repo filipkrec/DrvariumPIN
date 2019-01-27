@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DrvariumPIN.Models.Drvo>
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+    @{
+        ViewData["Title"] = "Drveće";
+    }
+
+<h2>Drveće</h2>
+<div class="treelist">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Vrsta)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Opis)
+                </th>
+                <th>
+                    Slika
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vrsta)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Opis)
+                    </td>
+                    <td>
+                        <image src="@Html.DisplayFor(modelItem => item.SlikaUrl)" style="height:200px;
+                    width:auto; border-style:groove; border-width:thick; ">
+                    </td>
+                    <td>
+
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

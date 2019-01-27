@@ -12,5 +12,8 @@ namespace DrvariumPIN.Data
             : base(options)
         {
         }
+        public ApplicationDbContext()
+        {
+        }
     }
 }
